@@ -1,0 +1,40 @@
+
+p
+{
+    font-weight: bold !important;
+    font-size: larger !important;
+}
+.status
+{
+    font-weight: bold !important;
+    font-size: large !important;
+}
+.money {
+    color: #ff4242;
+}
+#img1{position: relative;
+    width: 33%;
+    height: auto;}
+#img2{position: relative;
+    width: 33%;
+    height: auto;}
+#img3{position: relative;
+    width: 33%;
+    height: auto;}
+#title{width: 100%;
+       height: auto;}
+#status{width: 100%;
+        height: auto;}
+
+/* For phones: */
+@media only screen and (max-width: 600px) {
+    #img1{position: relative;
+        width: 100%;
+        height: auto;}
+    #img2{position: relative;
+        width: 100%;
+        height: auto;}
+    #img3{position: relative;
+        width: 100%;
+        height: auto;}
+    }
