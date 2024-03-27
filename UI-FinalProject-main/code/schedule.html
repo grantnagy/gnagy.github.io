@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/registerSearch.css">
+    <style> 
+        #main {display: grid; }
+        #img1 { height: 330px; }
+        #img2 { height: 185px; }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="header">
+            <a href="index.html">
+            <img id="topimg" src="../images/cmuredlogo.jpg">
+            </a>
+        </div>
+        <div id="main">
+            <p style="font-family: sans-serif; color: #850037;"> Currently Registered Classes </p>
+            <table>
+                <tr>
+                    <th>Course Name</th>
+                    <th> Time </th>
+                    <th> Room </th>
+                </tr>
+                <tr id="b1"></tr>
+                <tr id="b2"></tr>
+                <tr id="b3"></tr>
+                <tr id="b4"></tr>
+                <tr id="b5"></tr>
+            </table>
+
+            <!--<img src="../images/calender.jpg" id="img1">-->
+            <img src="../images/schedule.jpg" id="img2">
+        </div>
+        <div id="footer">
+            <a href="index.html">
+                <img src='../images/mavzoneicon.jpg'>
+            </a>
+        </div>
+    </div>
+</body>
+<script>
+    var registeredCourses = new Array;
+    var storageLength = localStorage.length;
+
+    for (let i = 2; i <= storageLength; i++) {
+        const currentItem = JSON.parse(localStorage.getItem(i));
+        //console.log(currentItem[0]);
+        registeredCourses.push(currentItem[0]);
+        let tr = document.getElementById("b" + (i-1) );
+        for (let k = 0; k <=2; k++) {
+            let td = tr.insertCell();
+            td.innerHTML = currentItem[k];
+        }
+
+    }
+    //console.log(registeredCourses);
+</script>
+</html>

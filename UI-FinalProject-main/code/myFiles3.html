@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/myFiles.css">
+</head>
+<body>
+    <div id="content">
+        <div id="header">
+            <a href="index.html">
+            <img id="topimg" src="../images/cmuredlogo.jpg">
+            </a>
+        </div>
+        <div id="main">
+            <p id="title"> CMU MyFiles </p>
+            <p id="path" style="padding-top: 0; font-size: 18px;"> MyFiles / Drive K (courses) / MATH 101 </p>
+            <table>
+                <tr>
+                    <th> File </th>
+                    <th> Date </th>
+                    <th> Size </th>
+                </tr>
+                <tr>
+                    <td> <a href="Homework1.txt" download> Homework1.txt </a> </td>
+                    <td> 01-01-2021 </td>
+                    <td>  10 KB </td>
+                </tr>
+                <tr>
+                    <td> <a>Test1Review.txt</a> </td>
+                    <td> 04-09-2021 </td>
+                    <td>  210 KB </td>
+                </tr>
+                <tr>
+                    <td> <a>CodeSample.exe</a> </td>
+                    <td> 01-27-2021 </td>
+                    <td>  730 KB </td>
+                </tr>
+                <tr>
+                    <td> <a>Lecture.mp4</a> </td>
+                    <td> 03-30-2021 </td>
+                    <td>  20 MB </td>
+                </tr>
+            </table>
+            <a  href="myFiles2.html"><button> Go Back </button></a>
+        </div>
+        <div id="footer">
+            <a href="index.html">
+                <img src='../images/mavzoneicon.jpg'>
+            </a>
+        </div>
+    </div>
+    <style>
+        td a {
+            color: rgb(221, 221, 221);
+            border: 2px solid #464646;
+            padding: 0.5em;
+            border-radius: 5px;
+            background-color: #464646;
+            margin-right: 10px;
+            padding-right: 0;
+        }
+        table * { 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        tr:first-child {
+            background-color: #b8b8b8;
+            font-size: 20px;
+            text-align: left;
+        }
+
+        td {
+            padding-top: 30px;
+        }
+
+        #title { align-self: center;}
+        #path { align-self: flex-start;}
+        button { height: 60px; }
+        button:last-child { 
+            align-self:flex-end; 
+            height: 50px; 
+            background-color: #850037; 
+            color:seashell;}
+    </style>
+</body>
+</html>

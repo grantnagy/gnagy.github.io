@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/registerSearch.css">
+</head>
+<body>
+    <div id="content">
+        <div id="header">
+            <a href="index.html">
+            <img id="topimg" src="../images/cmuredlogo.jpg">
+            </a>
+        </div>
+        <div id="main">
+            <p> Browse Results </p>
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Time, Location, Dates</th>
+                    <th>More Information</th>
+                </tr>
+                <tr>
+                    <td>Principals of Financial Accounting</td>
+                    <td>1:00pm - 1:50pm, DH 121, TBD</td>
+                    <td><button id="b1" onclick="saveClass('Principals of Financial Accounting', '1:00pm - 1:50pm', 'DH 121')"> Register </button></td>
+                </tr>
+                <tr>
+                    <td>Principals of Financial Accounting</td>
+                    <td>10:00am - 10:50am, EH 111, TBD</td>
+                    <td><button id="b2" onclick="saveClass('Principals of Financial Accounting', '10:00am - 10:50am', 'EH 111')"> Register </button></td>
+                </tr>
+                <tr>
+                    <td>Intermediate Accounting</td>
+                    <td>10:00am - 10:50am, CH 131, TBD</td>
+                    <td><button id="b3" onclick="saveClass('Intermediate Accounting', '10:00am - 10:50am', 'CH 131')"> Register </button></td>
+                </tr>
+                <tr>
+                    <td>Cost Accounting</td>
+                    <td>3:00pm - 4:50pm, HH 221, TBD</td>
+                    <td><button id="b4" onclick="saveClass('Cost Accounting', '3:00pm - 4:50pm', 'HH 221')"> Register </button></td>                
+                </tr>
+                <tr>
+                    <td>Independent Study</td>
+                    <td>1:00am - 1:50am, EH 311, TBD</td>
+                    <td><button id="b5" onclick="saveClass('Independent Study', '1:00am - 1:50am', 'EH 311')"> Register </button></td>
+                </tr>
+                </table>
+            <a href="register.html">
+                <button> Search Again </button>
+            </a>
+        </div>
+        <div id="footer">
+            <a href="index.html">
+                <img src='../images/mavzoneicon.jpg'>
+            </a>
+        </div>
+    </div>
+</body>
+<script src="js/register.js"></script>
+</html>
